@@ -78,7 +78,7 @@ public class MchInputServiceImpl implements MchInputService{
 				System.out.println("getRemark : "+mchData.getRemark());
 */
 				//INPUT_TAB에 정상적인 데이터 INSERT
-//				mchInputDao.setMchDataInsertInputTab(mchData);
+				mchInputDao.setMchDataInsertInputTab(mchData);
 		
 				String send1 = mchInput.getPumcode();
 				String send2 = mchInput.getLotno();
