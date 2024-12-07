@@ -189,10 +189,9 @@
 						<select style="font-weight:100; font-size: 14pt; text-align: center;" 
 							name="devicecode" id="devicecode" >
 							<option value="">전체</option>
-							<option value="1">1호기</option>
-							<option value="2">2호기</option>
-							<option value="3">3호기</option>
-							<option value="4">4호기</option>
+							<option value="5">5호기</option>
+							<option value="6">6호기</option>
+							<option value="7">7호기</option>
 						</select>
 					</label>
 				

@@ -69,7 +69,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 						desc.append("VALUE : "+value);
 						
 						
-						logger.info("TRACKING(14호기) : {}",desc.toString());						
+						logger.info("TRACKING(57호기) : {}",desc.toString());						
 						//트래킹 실행
 						trackingDao.ccf1Tracking01(tracking);
 						//지연시간 0.3초
@@ -89,7 +89,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 		String setDataDir = "Transys.TRACKING.CCF02.C01";
 		
 		//호기, 위치(순서), 태그경로
-		trackingDataSet("2",1,setDataDir);
+		trackingDataSet("6",1,setDataDir);
 	}
 	
 	//[2]예열장입 : 처리품이 예열실에 도착할 때
@@ -98,7 +98,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 		String setDataDir = "Transys.TRACKING.CCF02.C02";
 	
 		//호기, 위치(순서), 태그경로
-		trackingDataSet("2",2,setDataDir);
+		trackingDataSet("6",2,setDataDir);
 	}
 	
 	//[3]침탄실(1) : 침탄 처리 시작위치
@@ -107,7 +107,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 		String setDataDir = "Transys.TRACKING.CCF02.C03";
 	
 		//호기, 위치(순서), 태그경로
-		trackingDataSet("2",3,setDataDir);
+		trackingDataSet("6",3,setDataDir);
 	}
 	
 	//[4]확산실(1) : 침탄 처리 종료 및 확산 처리 시작위치
@@ -116,7 +116,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 		String setDataDir = "Transys.TRACKING.CCF02.C04";
 		
 		//호기, 위치(순서), 태그경로
-		trackingDataSet("2",4,setDataDir);
+		trackingDataSet("6",4,setDataDir);
 	}
 	
 	//[5]냉각실(1) : 확산 처리 종료 위치
@@ -124,7 +124,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 		
 		String setDataDir = "Transys.TRACKING.CCF02.C05";
 		
-		trackingDataSet("2",5,setDataDir);
+		trackingDataSet("6",5,setDataDir);
 		
 	}
 	
@@ -133,7 +133,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 			
 		String setDataDir = "Transys.TRACKING.CCF02.C06";
 			
-		trackingDataSet("2",6,setDataDir);
+		trackingDataSet("6",6,setDataDir);
 			
 	}
 	
@@ -142,7 +142,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 				
 		String setDataDir = "Transys.TRACKING.CCF02.C07";
 				
-		trackingDataSet("2",7,setDataDir);
+		trackingDataSet("6",7,setDataDir);
 				
 	}
 	
@@ -151,7 +151,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 					
 		String setDataDir = "Transys.TRACKING.CCF02.C08";
 					
-		trackingDataSet("2",8,setDataDir);
+		trackingDataSet("6",8,setDataDir);
 					
 	}
 	
@@ -160,7 +160,7 @@ public class TrackingServiceImpl2 implements TrackingService2{
 						
 		String setDataDir = "Transys.TRACKING.CCF02.C09";
 						
-		trackingDataSet("2",9,setDataDir);
+		trackingDataSet("6",9,setDataDir);
 						
 	}	
 }

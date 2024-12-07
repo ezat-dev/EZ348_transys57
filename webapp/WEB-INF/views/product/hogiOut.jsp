@@ -72,10 +72,9 @@
 		<hr>
 		
 		<div class="release_btn">
-			<div class="hogi">침탄 1호기 <button id="hogi1_out" type="button"><b>출고요청</b></button> </div>
-			<div class="hogi">침탄 2호기 <button id="hogi2_out" type="button"><b>출고요청</b></button> </div>
-			<div class="hogi">침탄 3호기 <button id="hogi3_out" type="button"><b>출고요청</b></button> </div>
-			<div class="hogi">침탄 4호기 <button id="hogi4_out" type="button"><b>출고요청</b></button> </div>
+			<div class="hogi">침탄 5호기 <button id="hogi5_out" type="button"><b>출고요청</b></button> </div>
+			<div class="hogi">침탄 6호기 <button id="hogi6_out" type="button"><b>출고요청</b></button> </div>
+			<div class="hogi">침탄 7호기 <button id="hogi7_out" type="button"><b>출고요청</b></button> </div>
 		</div>
 	</div>
 </div>
@@ -89,70 +88,53 @@
 	
 	
 	
-	$("#hogi1_out").on("click", function() {
+	$("#hogi5_out").on("click", function() {
 	    // 1호기 출고요청
 	    $.ajax({
 	        url: "/transys/product/dayList/popup/insert",
 	        type: "post",
 	        dataType: "json",
-	        data: { "device_code": "1" }, // device_code를 문자열로 설정
+	        data: { "device_code": "5" }, // device_code를 문자열로 설정
 	        success: function(result) {
-	            console.log("1호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
+	            console.log("5호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
 	            window.close();
 	        },
 	        error: function(xhr, status, error) {
-	            console.error("1호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
+	            console.error("5호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
 	        }
 	    });
 	});
 	
-	$("#hogi2_out").on("click", function() {
+	$("#hogi6_out").on("click", function() {
 	    // 2호기 출고요청
 	    $.ajax({
 	        url: "/transys/product/dayList/popup/insert",
 	        type: "post",
 	        dataType: "json",
-	        data: { "device_code": "2" }, // device_code를 문자열로 설정
+	        data: { "device_code": "6" }, // device_code를 문자열로 설정
 	        success: function(result) {
-	            console.log("2호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
+	            console.log("6호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
 	            window.close();
 	        },
 	        error: function(xhr, status, error) {
-	            console.error("2호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
+	            console.error("6호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
 	        }
 	    });
 	});
 	
-	$("#hogi3_out").on("click", function() {
+	$("#hogi7_out").on("click", function() {
 	    // 3호기 출고요청
 	    $.ajax({
 	        url: "/transys/product/dayList/popup/insert",
 	        type: "post",
 	        dataType: "json",
-	        data: { "device_code": "3" }, // device_code를 문자열로 설정
+	        data: { "device_code": "7" }, // device_code를 문자열로 설정
 	        success: function(result) {
-	            console.log("3호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
+	            console.log("7호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
 	            window.close();
 	        },
 	        error: function(xhr, status, error) {
-	            console.error("3호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
-	        }
-	    });
-	});
-	
-	$("#hogi4_out").on("click", function() {
-	    // 4호기 출고요청
-	    $.ajax({
-	        url: "/transys/product/dayList/popup/insert",
-	        type: "post",
-	        dataType: "json",
-	        data: { "device_code": "4" }, // device_code를 문자열로 설정
-	        success: function(result) {
-	            console.log("4호기 출고 요청 성공:", result); // 성공 여부 및 데이터 출력
-	            window.close();
-	        },
-	        error: function(xhr, status, error) {
-	            console.error("4호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
+	            console.error("7호기 출고 요청 실패:", status, error); // 실패 시 오류 출력
 	        }
 	    });
 	});

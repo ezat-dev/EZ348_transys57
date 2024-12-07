@@ -244,26 +244,20 @@
 	
 		<div id="uptime_div" style="width: 95%; text-align: center; margin: 0 auto;">
 				<div id="table_file" >
-					<div class="countDATA">침탄로 1호기</div>
+					<div class="countDATA">침탄로 5호기</div>
 				  <div id="cate_list01"></div>
 				</div>
 				
 				<div id="LNG02">
-					<div class="countDATA">침탄로 2호기</div>
+					<div class="countDATA">침탄로 6호기</div>
 			
 				  <div id="cate_list02"></div>
 				</div>
 				
 				<div id="LNG03">
-					<div class="countDATA">침탄로 3호기</div>
+					<div class="countDATA">침탄로 7호기</div>
 			
 				  <div id="cate_list03"></div>
-				</div>
-				
-				<div id="LNG04">
-					<div class="countDATA">침탄로 4호기</div>
-			
-				   <div id="cate_list04"></div>
 				</div>
 				
 		</div>

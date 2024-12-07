@@ -171,15 +171,10 @@
                 <label> 설비명 : 
                     <select name="placename" id="placename"style="font-weight: 100; text-align: center; width: 150px;">
                            <option value="">전체</option>
-                        <option value="CCF1_ALARM">1 호기</option>
-                        <option value="CCF1_ALARM">2 호기</option>
-                        <option value="CCF1_ALARM">3 호기</option>
-                        <option value="CCF1_ALARM">4 호기</option>
-                        <option value="CCF1_ALARM">5 호기</option>
-                        <option value="CCF1_ALARM">6 호기</option>
-                        <option value="CCF1_ALARM">7 호기</option>
-                        <option value="CCF1_ALARM">공통 1 호기</option>
-                        <option value="CCF1_ALARM">공통 2 호기</option>
+                        <option value="CCF5_ALARM">5 호기</option>
+                        <option value="CCF6_ALARM">6 호기</option>
+                        <option value="CCF7_ALARM">7 호기</option>
+                        <option value="CM2_ALARM">공통 2 호기</option>
                     </select> 
                 </label>
                 

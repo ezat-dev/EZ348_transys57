@@ -58,7 +58,7 @@ public class MchInputServiceImpl implements MchInputService{
 				
 				
 				
-				logger.info("MCHINPUT(14호기) : {}",desc.toString());				
+				logger.info("MCHINPUT(57호기) : {}",desc.toString());				
 				
 				//위 조건이 else 일때만, MESLOT가 공백(널)이면 변수 공백으로
 				if(mchData.getMeslot().length() == 0) {
@@ -98,13 +98,13 @@ public class MchInputServiceImpl implements MchInputService{
 				OpcDataMap opcData = new OpcDataMap();
 				
 				//화면의 표시값 초기화 (PLC값 등등)
-				opcData.setOpcData("Transys.MCHINPUT.PUMBUN", 0);
-				opcData.setOpcData("Transys.MCHINPUT.DEVICECODE", 0);
+				opcData.setOpcData("Transys.MCHINPUT.CM02.PUMBUN", 0);
+				opcData.setOpcData("Transys.MCHINPUT.CM02.DEVICECODE", 0);
 				
 				//마지막 창고 입고내역
 				desc.append("--> 입고완료");
 				
-				logger.info("MCHINPUT(14호기) : {}",desc.toString());					
+				logger.info("MCHINPUT(57호기) : {}",desc.toString());					
 				
 			}else {
 				//조회 카운터가 0이하이면 입고요청에러로 INPUT_TAB에 INSERT 후 리턴
@@ -126,15 +126,15 @@ public class MchInputServiceImpl implements MchInputService{
 		String dbMesLot = "";
 		
 		//품번, 호기값 조회
-		Map<String, Object> pumbunMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM01.PUMBUN");		//DB1.DBW804
-		Map<String, Object> deviceMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM01.DEVICECODE");	//DB1.DBW808
+		Map<String, Object> pumbunMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM02.PUMBUN");		//DB1.DBW804
+		Map<String, Object> deviceMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM02.DEVICECODE");	//DB1.DBW808
 		
 		String plcPumbun = pumbunMap.get("value").toString();
 		String plcDevice = deviceMap.get("value").toString();
 		
 		//제품추출요구 신호
 		boolean mchInputChk = false;
-		Map<String, Object> mchInputMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM01.MCHINPUT_CHK");	//DB18.X41.4
+		Map<String, Object> mchInputMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM02.MCHINPUT_CHK");	//DB18.X41.4
 		
 		mchInputChk = Boolean.parseBoolean(mchInputMap.get("value").toString());
 		
@@ -151,7 +151,7 @@ public class MchInputServiceImpl implements MchInputService{
 		}		
 		
 		if(mchInputChk) {
-			Map<String, Object> plcCountMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM01.PLC_COUNT");	//가상태그
+			Map<String, Object> plcCountMap = opcDataMap.getOpcData("Transys.MCHINPUT.CM02.PLC_COUNT");	//가상태그
 			
 			//PLC 창고입고카운트 1증가
 			MainController.plcCount = Integer.parseInt(plcCountMap.get("value").toString());			

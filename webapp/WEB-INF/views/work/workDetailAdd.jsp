@@ -122,10 +122,9 @@
 					<div class="add_text"><label>처리품 코드 : </label><input type="text" id="pumcode" name="pumcode"/></div>
 					<div class="add_text"><label>침탄로 :</label>
 						<select id="devicecode" name="devicecode" >
-							<option value="1">1호기</option>
-							<option value="2">2호기</option>
-							<option value="3">3호기</option>
-							<option value="4">4호기</option>
+							<option value="5">5호기</option>
+							<option value="6">6호기</option>
+							<option value="7">7호기</option>
 						</select>
 					</div>
 					<div class="add_text"><label>작업번호 : </label><input type="text" id="seq" name="seq"/></div>

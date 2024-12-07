@@ -25,7 +25,7 @@
 	<bean id="trackingProcessor1" class="com.transys.async.TrackingProcessor1"/>
 	<bean id="trackingProcessor2" class="com.transys.async.TrackingProcessor2"/>
 	<bean id="trackingProcessor3" class="com.transys.async.TrackingProcessor3"/>
-	<bean id="trackingProcessor4" class="com.transys.async.TrackingProcessor4"/>
+<!-- 	<bean id="trackingProcessor4" class="com.transys.async.TrackingProcessor4"/> -->
 	<bean id="trackingProcessor5" class="com.transys.async.TrackingProcessor5"/>
 	<task:scheduler id="scheduler" pool-size="4" />
 	<task:executor id="executor" keep-alive="10" pool-size="10-20"

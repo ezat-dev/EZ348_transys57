@@ -15,6 +15,9 @@ public class OutPut {
 	private boolean outPutChk2;
 	private boolean outPutChk3;
 	private boolean outPutChk4;
+	private boolean outPutChk5;
+	private boolean outPutChk6;
+	private boolean outPutChk7;
 	
 	
 	
@@ -72,6 +75,24 @@ public class OutPut {
 	public void setOutPutChk4(boolean outPutChk4) {
 		this.outPutChk4 = outPutChk4;
 	}
-		
+	public boolean isOutPutChk5() {
+		return outPutChk5;
+	}
+	public void setOutPutChk5(boolean outPutChk5) {
+		this.outPutChk5 = outPutChk5;
+	}
+	public boolean isOutPutChk6() {
+		return outPutChk6;
+	}
+	public void setOutPutChk6(boolean outPutChk6) {
+		this.outPutChk6 = outPutChk6;
+	}
+	public boolean isOutPutChk7() {
+		return outPutChk7;
+	}
+	public void setOutPutChk7(boolean outPutChk7) {
+		this.outPutChk7 = outPutChk7;
+	}
+
 	
 }

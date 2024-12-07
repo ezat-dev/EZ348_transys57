@@ -73,7 +73,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 								desc.append("VALUE : "+value);
 								
 								
-								logger.info("TRACKING(14호기) : {}",desc.toString());						
+								logger.info("TRACKING(57호기) : {}",desc.toString());						
 								//트래킹 실행
 								trackingDao.ccf1Tracking01(tracking);
 								//지연시간 0.3초
@@ -96,7 +96,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 							desc.append("VALUE : "+value);
 							
 							
-							logger.info("TRACKING(14호기) : {}",desc.toString());						
+							logger.info("TRACKING(57호기) : {}",desc.toString());						
 							//트래킹 실행
 							trackingDao.ccf1Tracking01(tracking);
 							//지연시간 0.3초
@@ -113,7 +113,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 	@Override
 	public void cm1Tracking10_1() throws InterruptedException, ExecutionException {
 		
-		String setDataDir = "Transys.TRACKING.CM01.C10_1";
+		String setDataDir = "Transys.TRACKING.CM02.C10_1";
 				
 		trackingDataSet(10,setDataDir);
 	}
@@ -123,7 +123,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 	@Override
 	public void cm1Tracking10_2() throws InterruptedException, ExecutionException {
 		
-		String setDataDir = "Transys.TRACKING.CM01.C10_2";
+		String setDataDir = "Transys.TRACKING.CM02.C10_2";
 				
 		trackingDataSet(10,setDataDir);
 	}
@@ -133,7 +133,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 	@Override
 	public void cm1Tracking11_1() throws InterruptedException, ExecutionException {
 		
-		String setDataDir = "Transys.TRACKING.CM01.C11_1";
+		String setDataDir = "Transys.TRACKING.CM02.C11_1";
 				
 		trackingDataSet(11,setDataDir);
 	}
@@ -143,7 +143,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 	@Override
 	public void cm1Tracking11_2() throws InterruptedException, ExecutionException {
 		
-		String setDataDir = "Transys.TRACKING.CM01.C11_2";
+		String setDataDir = "Transys.TRACKING.CM02.C11_2";
 				
 		trackingDataSet(11,setDataDir);	
 	}
@@ -153,7 +153,7 @@ public class TrackingServiceImpl5 implements TrackingService5{
 	@Override
 	public void cm1Tracking12() throws InterruptedException, ExecutionException {
 		
-		String setDataDir = "Transys.TRACKING.CM01.C12";
+		String setDataDir = "Transys.TRACKING.CM02.C12";
 				
 		trackingDataSet(12,setDataDir);	
 	}	
