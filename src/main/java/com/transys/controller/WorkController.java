@@ -63,8 +63,7 @@ public class WorkController {
        Work work = new Work();
        work.setDevicecode(p_devicecode);
        work.setSearchStartDate(p_date+" 07:00");
-       work.setSearchEndDate(p_date+" 06:59");       
-       work.setServerSelect(UtilClass.serverSelectRtn(p_devicecode));
+       work.setSearchEndDate(p_date+" 06:59");
        
        StringBuffer desc = new StringBuffer();
        
@@ -94,8 +93,7 @@ public class WorkController {
 
        Map<String, Object> rtnMap = new HashMap<String, Object>();
        Work work = new Work();
-       work.setLotno(lotNo);       
-       work.setServerSelect(UtilClass.serverSelectRtn(lotNo.substring(8,9)));
+       work.setLotno(lotNo);
        
        Work workDetailDesc = workService.workDetailDescData(work);
        
@@ -147,7 +145,6 @@ public class WorkController {
        Map<String, Object> rtnMap = new HashMap<String, Object>();
        Work work = new Work();
        work.setLotno(lotNo);
-       work.setServerSelect(UtilClass.serverSelectRtn(lotNo.substring(8,9)));
        
        Work workEditData = workService.workDetailEditData(work);
        
@@ -168,8 +165,7 @@ public class WorkController {
     @ResponseBody
     public Map<String, Object> setWorkDetailEditDataSave(@ModelAttribute Work work) {
 
-       Map<String, Object> rtnMap = new HashMap<String, Object>();
-       work.setServerSelect(UtilClass.serverSelectRtn(work.getLotno().substring(8,9)));       
+       Map<String, Object> rtnMap = new HashMap<String, Object>();      
        workService.setWorkDetailEditDataSave(work);
        
        rtnMap.put("data", "OK");
@@ -228,7 +224,6 @@ public class WorkController {
           return rtnMap;
        }
        
-       work.setServerSelect(UtilClass.serverSelectRtn(work.getDevicecode()));
        workService.setWorkDetailAddDataSave(work);
        rtnMap.put("data", "OK");
        
@@ -392,8 +387,7 @@ public class WorkController {
         work.setDevicecode(placename);
         // 날짜 값을 Work 객체에 설정
         work.setSearchStartDate(date + " 07:00");
-        work.setSearchEndDate(date + " 06:59");
-        work.setServerSelect(UtilClass.serverSelectRtn(placename));        
+        work.setSearchEndDate(date + " 06:59");       
 
         return workService.workDayList(work);
     }
@@ -410,8 +404,7 @@ public class WorkController {
         Work work = new Work();
         work.setDevicecode(placename);
         // 날짜 값을 Work 객체에 설정
-        work.setKeymonth(date.substring(0,6));
-        work.setServerSelect(UtilClass.serverSelectRtn(placename));         
+        work.setKeymonth(date.substring(0,6));        
 //        System.out.println(date.substring(0,6));
         
 
@@ -431,8 +424,7 @@ public class WorkController {
         Work work = new Work();
         work.setDevicecode(placename);
         // 날짜 값을 Work 객체에 설정
-        work.setKeyyear(date);
-        work.setServerSelect(UtilClass.serverSelectRtn(placename));        
+        work.setKeyyear(date); 
  
 
         return workService.workYearList(work);

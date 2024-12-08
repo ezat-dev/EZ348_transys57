@@ -10,7 +10,7 @@
       WHERE 1=1
       AND SUBSTRING(A.STARTTIME, 1, 16) >= #{searchStartDate}
       AND SUBSTRING(A.STARTTIME, 1, 16) <![CDATA[<=]]> DATEADD(DAY,1,#{searchEndDate})
-      <if test="devicecode != '0'">
+      <if test="devicecode != ''">
       AND A.DEVICECODE = #{devicecode}
       </if>
       AND A.PUMCODE = B.DOBUN

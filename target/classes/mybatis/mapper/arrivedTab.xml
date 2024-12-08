@@ -8,7 +8,7 @@
 		WHERE status = '0'
 	</select>
 
-	<select id="getArrivedTabProductSelect" parameterType="arrviedTab" resultType="product">
+	<select id="getArrivedTabProductSelect" parameterType="arrivedTab" resultType="product">
 		SELECT *
 		FROM T_PRODUCT
 		WHERE dobun = #{code}
